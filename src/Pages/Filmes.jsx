@@ -60,12 +60,12 @@ function Filmes() {
                             filme =>(
                                 <>
                                 
-                                    <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
+                                    <div key={filme.id} className="flex flex-col bg-primary-katz text-black rounded-xl w-[200px] relative h-4/6">
                                         <Link onClick={()=> moreDetail(filme)} className="">
                                             <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
+                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-katz" key={filmes}>{filme.title}</h1>
                                         </Link>
-                                        <Link to="/favoritos" className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
+                                        
                                     </div>
                                 
                                 </>
@@ -77,179 +77,12 @@ function Filmes() {
                 </div>
             </div>
 
-            <div className="p-6 mt-5">
-                <h2 className="text-white text-4xl mb-5 font-font-sub" >Comédia</h2>
-                <div className="listaFilmes  gap-10 flex overflow-x-scroll [&>div]:flex-shrink-0 ">
-                    {
-                        filmes.map(
-                            filme =>(
-                                <>
-                                
-                                <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
-                                        <Link onClick={()=> moreDetail(filme)} className="">
-                                            <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
-                                        </Link>
-                                        <Link className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
-                                    </div>
-                                
-                                </>
-                                
-                                
-                            )
-                        )
-                    }
-                </div>
-            </div>
-            <div className="p-6 mt-5">
-                <h2 className="text-white text-4xl mb-5 font-font-sub" >Suspense</h2>
-                <div className="listaFilmes  gap-10 flex overflow-x-scroll [&>div]:flex-shrink-0">
-                    {
-                        filmes.map(
-                            filme =>(
-                                <>
-                                
-                                <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
-                                        <Link onClick={()=> moreDetail(filme)} className="">
-                                            <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
-                                        </Link>
-                                        <Link className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
-                                    </div>
-                                
-                                </>
-                                
-                                
-                            )
-                        )
-                    }
-                </div>
-            </div>
-            <div className="p-6 mt-5">
-                <h2 className="text-white text-4xl mb-5 font-font-sub" >Ação</h2>
-                <div className="listaFilmes  gap-10 flex overflow-x-scroll [&>div]:flex-shrink-0">
-                    {
-                        filmes.map(
-                            filme =>(
-                                <>
-                                
-                                <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
-                                        <Link onClick={()=> moreDetail(filme)} className="">
-                                            <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
-                                        </Link>
-                                        <Link className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
-                                    </div>
-                                
-                                </>
-                                
-                                
-                            )
-                        )
-                    }
-                </div>
-            </div>
-            <div className="p-6 mt-5">
-                <h2 className="text-white text-4xl mb-5 font-font-sub" >Ficção</h2>
-                <div className="listaFilmes  gap-10 flex overflow-x-scroll [&>div]:flex-shrink-0">
-                    {
-                        filmes.map(
-                            filme =>(
-                                <>
-                                
-                                <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
-                                        <Link onClick={()=> moreDetail(filme)} className="">
-                                            <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
-                                        </Link>
-                                        <Link className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
-                                    </div>
-                                
-                                </>
-                                
-                                
-                            )
-                        )
-                    }
-                </div>
-            </div>
-            <div className="p-6 mt-5">
-                <h2 className="text-white text-4xl mb-5 font-font-sub" >Terror</h2>
-                <div className="listaFilmes  gap-10 flex overflow-x-scroll [&>div]:flex-shrink-0">
-                    {
-                        filmes.map(
-                            filme =>(
-                                <>
-                                
-                                <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
-                                        <Link onClick={()=> moreDetail(filme)} className="">
-                                            <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
-                                        </Link>
-                                        <Link className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
-                                    </div>
-                                
-                                </>
-                                
-                                
-                            )
-                        )
-                    }
-                </div>
-            </div>
-            <div className="p-6 mt-5">
-                <h2 className="text-white text-4xl mb-5 font-font-sub" >Aventura</h2>
-                <div className="listaFilmes  gap-10 flex overflow-x-scroll [&>div]:flex-shrink-0">
-                    {
-                        filmes.map(
-                            filme =>(
-                                <>
-                                
-                                <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
-                                        <Link onClick={()=> moreDetail(filme)} className="">
-                                            <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
-                                        </Link>
-                                        <Link className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
-                                    </div>
-                                
-                                </>
-                                
-                                
-                            )
-                        )
-                    }
-                </div>
-            </div>
-            <div className="p-6 mt-5">
-                <h2 className="text-white text-4xl mb-5 font-font-sub" >Romance</h2>
-                <div className="listaFilmes  gap-10 flex overflow-x-scroll [&>div]:flex-shrink-0">
-                    {
-                        filmes.map(
-                            filme =>(
-                                <>
-                                
-                                <div key={filme.id} className="flex flex-col bg-primary-kaneto text-black rounded-xl w-[200px] relative h-4/6">
-                                        <Link onClick={()=> moreDetail(filme)} className="">
-                                            <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
-                                            <h1 className=" text-xl text-center p-1 items-center text-titulo-kaneto" key={filmes}>{filme.title}</h1>
-                                        </Link>
-                                        <Link className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
-                                    </div>
-                                
-                                </>
-                                
-                                
-                            )
-                        )
-                    }
-                </div>
-            </div>
+            
         <Modal
           title={aModal.title}
           open  = {mostrarModal}
           footer={
-            <Button  onClick={closeDetail} className="bg-primary-kaneto text-white hover:bg-none hover:border-primary-kaneto">
+            <Button  onClick={closeDetail} className="bg-primary-katz text-white hover:bg-none hover:border-primary-kaneto">
               Ok
             </Button>
           }

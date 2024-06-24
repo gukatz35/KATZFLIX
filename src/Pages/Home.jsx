@@ -1,7 +1,7 @@
 import  data  from "../../artigos.json";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Modal, Button } from "antd";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -25,7 +25,7 @@ function Home() {
           title={dataModal.title}
           open  = {showModal}
           footer={
-            <Button  onClick={closeDetail} className="bg-primary-kaneto text-white hover:bg-none hover:border-primary-kaneto">
+            <Button  onClick={closeDetail} className="bg-primary-katz text-white hover:bg-none hover:border-primary-kaneto">
               Ok
             </Button>
           }
@@ -34,8 +34,8 @@ function Home() {
             <img src={dataModal.image} />
             <p className="my-3"> {dataModal.text} </p>
         </Modal>
-            <h2 className="font-font-sub font-black text-5xl text-white flex justify-center my-10">Cine News</h2>
-            <div className="grid grid-cols-2">
+           
+            <div className="grid grid-cols-1">
             {
                 data.map(
                     (filme, index) => (
@@ -43,22 +43,24 @@ function Home() {
                         <div className="card bg-card text-white m-3 flex rounded-2xl h-[95%]" key={index} >
                             <div className=" w-2/4 bg-cover rounded-l-2xl" style={{backgroundImage: `url(${filme.image})`}}></div>
                             <div className="flex flex-col w-2/4">
-                                <h1 className="text-2xl text-center my-2 text-titulo-kaneto"  key={filme.title}>{filme.title}</h1>
+                                <h1 className="text-2xl text-center my-2 text-titulo-katz"  key={filme.title}>{filme.title}</h1>
                                 <div className="tags flex justify-center" >
                                 {
                                     filme.tags.map( tag => (
-                                        <span className="bg-primary-kaneto text-secondary-kaneto p-1 m-1 rounded text-xs" key={tag}>{tag}</span>
+                                        <span className="bg-[#000] text-secondary-katz p-1 m-1 rounded text-xs" key={tag}>{tag}</span>
                                     ))
                                 }
                                 </div>
                                 <div className="mx-3 my-3 text-justify" >
                                 {
                                     filme.text.map( (text, index )=> (
-                                        <p  className=" text-xs font-font-text" key={index}>{text}</p>
+                                        <p  className=" text-xs font-font-text" key={index}></p>
                                     ))
                                 }
                                 </div>
-                                <NavLink onClick={()=> moreDetail(filme)}  className="text-sm font-font-sub justify-start mx-3 text-hover-color">leia mais</NavLink>
+                                <button className="bg-red-600 w-13">Confira</button>
+                                {/* <Link className="tags flex justify-center">Confira</Link> */}
+                                
                             </div>
                             
                         </div>

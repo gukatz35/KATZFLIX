@@ -7,12 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-kaneto': '#033325',
-        'secondary-kaneto': '#64756A',
-        'titulo-kaneto': '#5FAA95',
+        'primary-katz': '#FF0000',
+        'secondary-katz': '#FFFFFF',
+        'titulo-katz': '#FFFFFF',
         'fundo': '#000',
         'hover-color': '#7DCA99',
-        'card': '#334B3C'
+        'card': '#000',
+        'Confira': '#FF0000'
+        
       },
       fontFamily: {
         'font-header': ['Sedan SC', 'serif'],

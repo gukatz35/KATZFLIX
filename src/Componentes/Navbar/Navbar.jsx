@@ -7,7 +7,7 @@ function Navbar() {
                 <li><NavLink className="text-2xl font-font-header hover:text-hover-color" to="/">Home</NavLink></li>
                 <li><NavLink className="text-2xl font-font-header hover:text-hover-color" to="filmes">Filmes</NavLink></li>
                 <li><NavLink className="text-2xl font-font-header hover:text-hover-color" to="contato">Contato</NavLink></li>
-                <li><NavLink className="text-2xl material-symbols-outlined hover:text-hover-color " to="favoritos">star</NavLink></li>
+                
             </ul>
         </nav>
     );
