@@ -52,7 +52,7 @@ function Filmes() {
                                             <img className="h-full" src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt="" />
                                             <h1 className=" text-xl text-center p-1 items-center text-titulo-katz" key={filmes}>{filme.title}</h1>
                                         </Link>
-                                        <Link to="/favoritos" className=" right-0 absolute"><img className="w-8 p-1" src="star.png" alt="" /></Link>
+                                        
                                     </div>
                                 
                                 </>

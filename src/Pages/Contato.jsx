@@ -1,9 +1,7 @@
 function Contato() {
     return ( 
-        <div className="flex my-20">
-        <div className="w-2/4 p-24">
-           
-        </div>
+        
+        <div className="flex-col">
         <h1 className="text-white text-4xl mb-5 font-font-sub flex justify-center" >CONTATO</h1>
         <form className="w-2/4 flex flex-col justify-center items-center">
             <div className="w-4/5 flex justify-around mb-4">
@@ -25,6 +23,7 @@ function Contato() {
             <input className="rounded-lg py-3 px-24 text-white bg-primary-katz mt-5" type="button" value="Enviar" />
         </form>
         </div>
+        
     );
 }
 
