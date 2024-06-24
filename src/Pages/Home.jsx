@@ -1,39 +1,17 @@
 import  data  from "../../artigos.json";
-import { useState } from "react";
-import { Modal, Button } from "antd";
-import { Link } from "react-router-dom";
+
+
+
 
 function Home() {
 
-    const [dataModal, setDataModal] = useState({});
-    const [showModal, setShowModal] = useState(false);
-
-    const moreDetail = items => {
-        setShowModal(true);
-        setDataModal(items);
-      };
     
-      const closeDetail = () => {
-        setShowModal(false);
-      };
-
+    
     return (
         
         <>
 
-        <Modal 
-          title={dataModal.title}
-          open  = {showModal}
-          footer={
-            <Button  onClick={closeDetail} className="bg-primary-katz text-white hover:bg-none hover:border-primary-kaneto">
-              Ok
-            </Button>
-          }
-          onCancel={closeDetail}
-        >
-            <img src={dataModal.image} />
-            <p className="my-3"> {dataModal.text} </p>
-        </Modal>
+        
            
             <div className="grid grid-cols-1">
             {
@@ -59,7 +37,7 @@ function Home() {
                                 }
                                 </div>
                                 <button className="bg-red-600 w-13">Confira</button>
-                                {/* <Link className="tags flex justify-center">Confira</Link> */}
+                                
                                 
                             </div>
                             
