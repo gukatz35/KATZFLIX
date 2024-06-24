@@ -4,7 +4,7 @@ function Contato() {
         <div className="w-2/4 p-24">
            
         </div>
-       
+        <h1 className="text-white text-4xl mb-5 font-font-sub flex justify-center" >CONTATO</h1>
         <form className="w-2/4 flex flex-col justify-center items-center">
             <div className="w-4/5 flex justify-around mb-4">
                 <label className="text-2xl text-white"  htmlFor="nome">Nome:</label>

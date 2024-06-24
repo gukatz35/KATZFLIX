@@ -19,13 +19,13 @@ function Home() {
                     (filme, index) => (
                         <>
                         <div className="card bg-card text-white m-3 flex rounded-2xl h-[95%]" key={index} >
-                            <div className=" w-2/4 bg-cover rounded-l-2xl" style={{backgroundImage: `url(${filme.image})`}}></div>
-                            <div className="flex flex-col w-2/4">
+                            <div className=" w-1/5 bg-cover rounded-l-2xl" style={{backgroundImage: `url(${filme.image})`}}></div>
+                            <div className="flex flex-col w-2/4 justify-center items-center">
                                 <h1 className="text-2xl text-center my-2 text-titulo-katz"  key={filme.title}>{filme.title}</h1>
                                 <div className="tags flex justify-center" >
                                 {
                                     filme.tags.map( tag => (
-                                        <span className="bg-[#000] text-secondary-katz p-1 m-1 rounded text-xs" key={tag}>{tag}</span>
+                                        <span className="bg-[#000] text-secondary-katz p-1 m-3 rounded text-xs" key={tag}>{tag}</span>
                                     ))
                                 }
                                 </div>
@@ -36,7 +36,7 @@ function Home() {
                                     ))
                                 }
                                 </div>
-                                <button className="bg-red-600 w-13">Confira</button>
+                                <button className="bg-red-600 w-1/4 text-2xl text-center my-2  rounded-lg">Confira</button>
                                 
                                 
                             </div>

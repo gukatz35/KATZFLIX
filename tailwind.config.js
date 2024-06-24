@@ -17,7 +17,7 @@ export default {
         
       },
       fontFamily: {
-        'font-header': ['Sedan SC', 'serif'],
+        'font-header': ['Inter', 'Inter'],
         'font-sub': ["Inika", 'serif'],
         'font-text': ["Roboto", 'sans-serif']
       }
